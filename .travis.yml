@@ -5,7 +5,7 @@ xcode_scheme: Owncloud iOs Client
 xcode_sdk: 
 
 script:
-- xcodebuild -scheme 'OCCommunicationLib/ownCloud iOS library.xcodeproj' -sdk iphonesimulator CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO test | xcpretty -c
+- xcodebuild -scheme 'Owncloud iOs Client.xcodeproj' -sdk iphonesimulator CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO test | xcpretty -c
 
 before_install:
   - brew update; brew update
