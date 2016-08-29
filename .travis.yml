@@ -2,7 +2,10 @@ language: objective-c
 osx_image: xcode8
 xcode_project: Owncloud iOs Client.xcodeproj
 xcode_scheme: Owncloud iOs Client
-xcode_sdk: iphonesimulator
+xcode_sdk: 
+
+script:
+- xcodebuild -scheme 'OCCommunicationLib/ownCloud iOS library.xcodeproj' -sdk iphonesimulator CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO test | xcpretty -c
 
 before_install:
   - brew update; brew update
